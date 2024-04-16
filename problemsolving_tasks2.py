@@ -166,5 +166,99 @@ def find_index_of_element(n: int, l: list) -> int:
 # Task 5
 ################################################
 
+# With an input list of integers, sort the elements starting with the largest positive integer, and ending with the smallest negative integer.
+
+# For example, with the list [1, -3, 2, -5, 4, -1], the method should return [4, 2, 1, -1, -3, -5]
+
+def sort_list(l: list) -> list:
+  return []
+
+# When method is ready, uncomment the following print command to test it
+
+# print("-----------------------------\nTask 5: Sort list\n-----------------------------")
+# print("Result: " + str(sort_list([1, -3, 2, -5, 4, -1])) + "\nExpected output: [4, 2, 1, -1, -3, -5]")
+# print("Result: " + str(sort_list([1, 2, 3, 4, 5])) + "\nExpected output: [5, 4, 3, 2, 1]")
+
+
+################################################
+# Task 5.2
+################################################
+
+# The simple solution in a task like the one above is to use python's built-in sort method, which sorts the list in ascending order.
+
+# If you used the sort method in the task above, try to implement the sorting algorithm yourself, without using the sort method. Instead
+# you write the functionality yourself with if statements, loops, and variables.
+
+# If you didn't use the sort method, try using this now instead and see how effective it is to use built-in methods for tasks.
+
+def sort_list2(l: list) -> list:
+  return []
+
+
+
+
+################################################
+# Task 6
+################################################
+
+# Safety and security is a huge concern when creating applications. We want to make sure that inputs from the users are valid and secure.
+# When we as users use applications we often input our email address as a string.
+
+# This string should meet some criteria to be valid: 
+
+# Firstly, it should contain a '@' symbol. This symbol is used to separate the username from the domain name.
+# The username should contain only letters, numbers, dots, and underscores.
+# The domain name should contain only letters and one '.' symbol. Like "gmail.com" or "hotmail.com".
+
+# Create one method that takes a string as input, and checks if the string is a valid email address. If the email is valid, return "VALID", otherwise return "INVALID".
+# You can implement this using if statements and checks, or you could use regular expressions.
+# See more about regular expressions/regex here: https://docs.python.org/3/library/re.html
+
+# Using if statements, you might have to spilt up the input string using split() method, and then check each part of the email address separately.
+
+def is_valid_email(email: str) -> str:
+  return ""
+
+# When method is ready, uncomment the following print commands to test it
+
+# print("-----------------------------\nTask 6: Check if valid email\n-----------------------------")
+# print("Result: " + is_valid_email("johan.hotmail.com") + "\nExpected output: INVALID")
+# print("Result: " + is_valid_email("johan@") + "\nExpected output: INVALID")
+# print("Result: " + is_valid_email("johan@hotmail") + "\nExpected output: INVALID")
+# print("Result: " + is_valid_email("johan@hotmail.") + "\nExpected output: INVALID")
+# print("Result: " + is_valid_email("@hotmail.com") + "\nExpected output: INVALID")
+# print("Result: " + is_valid_email("johan@hotmailcom") + "\nExpected output: INVALID")
+ 
+# print("Result: " + is_valid_email("johan@hotmail.com") + "\nExpected output: VALID")
+
+
+################################################
+# Task 6.2
+################################################
+
+# Passwords are another important part of security. When we create accounts on websites, we often have to create a password.
+# The password should meet some criteria to be valid:
+
+# The password should be at least 8 characters long.
+# The password should contain at least one uppercase letter.
+# The password should contain at least one lowercase letter.
+# The password should contain at least one number.
+# The password should contain at least one special character, like '@', '#', '$', '%', etc.
+
+# Create one method that takes a string as input, and checks if the string is a valid password. If the password is valid, return "VALID", otherwise return "INVALID".
+
+def is_valid_password(password: str) -> str:
+  return ""
+
+# When method is ready, uncomment the following print commands to test it
+
+# print("-----------------------------\nTask 6.2: Check if valid password\n-----------------------------")
+# print("Result: " + is_valid_password("Password") + "\nExpected output: INVALID")
+# print("Result: " + is_valid_password("password") + "\nExpected output: INVALID")
+# print("Result: " + is_valid_password("Password1") + "\nExpected output: INVALID")
+# print("Result: " + is_valid_password("Password1@") + "\nExpected output: VALID")
+
+
+
 
 
